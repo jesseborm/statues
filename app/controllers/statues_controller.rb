@@ -1,5 +1,5 @@
 class StatuesController < ApplicationController
-  before :set_statue, only: [:show, :edit, :update, :destroy]
+  before_action :set_statue, only: [:show, :edit, :update, :destroy]
 
   def index
     @statues = Statue.all
