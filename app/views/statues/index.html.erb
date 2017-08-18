@@ -2,4 +2,11 @@
 
 <h3>Statues</h3>
 
-<p><%= @statues.each{ |statue| statue.image_url } %></p>
+<ul class="gallery">
+  <% @statues.each do |statue| %>
+    <li class="statue-item">
+      <%= statue.name %>
+      <%= statue.image_url %>
+    </li>
+  <% end  %>
+</ul> 
