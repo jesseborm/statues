@@ -6,7 +6,7 @@
   <% @statues.each do |statue| %>
     <li class="statue-item">
       <%= statue.name %>
-      <%= statue.image_url %>
+      <%= image_tag statue.image_url %>
     </li>
   <% end  %>
-</ul> 
+</ul>
