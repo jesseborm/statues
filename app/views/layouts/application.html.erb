@@ -4,6 +4,10 @@
     <title>RozArts</title>
     <%= csrf_meta_tags %>
 
+    <!-- To change the favicon of the page -->
+    <% favicon_link_tag 'statue_favicon.ico' %>
+    <link href="/assets/statue_favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
