@@ -1,0 +1,12 @@
+
+
+<h3>Statues</h3>
+
+<ul class="gallery">
+  <% @statues.each do |statue| %>
+    <li class="statue-item">
+      <%= statue.name %>
+      <%= image_tag statue.image_url %>
+    </li>
+  <% end  %>
+</ul>

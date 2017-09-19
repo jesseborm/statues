@@ -7,4 +7,8 @@ test:
 production:
   adapter: redis
   url: redis://localhost:6379/1
+<<<<<<< HEAD
   channel_prefix: RoozArts_production
+=======
+  channel_prefix: RozArts_production
+>>>>>>> 88f236f25674d4c75f39a324544384c287141e76

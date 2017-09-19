@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+<<<<<<< HEAD
+=======
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+>>>>>>> 88f236f25674d4c75f39a324544384c287141e76
