@@ -11,7 +11,7 @@
           <%= statue.name %>
         </div>
         <div class="statue-image">
-          <%= image_tag statue.image_url, class: "img"  %>
+          <%= link_to image_tag(statue.image_url, class: "img"), statue, class: "link" %>
         </div>
       </div>
     </div>

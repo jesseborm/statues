@@ -2,6 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+* {
+  box-sizing: border-box;
+}
 
 .container {
   display: flex;
@@ -10,12 +13,15 @@
   // width: 1200px;
   // height: 1500px;
   background-color: lightgrey;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .statue-card {
   background-color: #42f4c2;
   margin: 5px;
+  // width: 400px;
+  // display: flex;
+  // min-width: calc(100%/3 - 40px);
 }
 
 .statue-item {
@@ -28,8 +34,9 @@
   max-width: 300px;
   max-height: 400px;
   margin: 10px;
-  // align-items: center;
-  // align-content: center;
-  // centreer images
-  // experimenteren met uitlijnen
+  transition: all 0.3s;
+}
+
+a:hover img {
+  transform: scale(1.1);
 }
