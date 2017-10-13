@@ -5,12 +5,16 @@
 <div class="statue-gallery">
   <div class="container">
     <% @statues.each do |statue| %>
+    <div class="statue-card">
       <div class="statue-item">
-        <%= statue.name %>
+        <div class="statue-name">
+          <%= statue.name %>
+        </div>
         <div class="statue-image">
           <%= image_tag statue.image_url, class: "img"  %>
         </div>
       </div>
+    </div>
     <% end  %>
   </div>
 </div>
