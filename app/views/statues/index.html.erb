@@ -3,18 +3,14 @@
 <h3>Statues</h3>
 
 <div class="statue-gallery">
-  <div class="container">
-    <% @statues.each do |statue| %>
-    <div class="statue-card">
-      <div class="statue-item">
-        <div class="statue-name">
-          <%= statue.name %>
-        </div>
-        <div class="statue-image">
-          <%= link_to image_tag(statue.image_url, class: "img"), statue, class: "link" %>
-        </div>
-      </div>
+  <% @statues.each do |statue| %>
+  <div class="statue-card">
+    <div class="statue-image-link">
+      <%= link_to image_tag(statue.image_url, class: "statue-img"), statue, class: "link" %>
     </div>
-    <% end  %>
+    <div class="statue-name">
+      <%= statue.name %>
+    </div>
   </div>
+  <% end  %>
 </div>

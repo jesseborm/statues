@@ -2,38 +2,52 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  }
+
 * {
   box-sizing: border-box;
 }
 
-.container {
+.statue-gallery {
   display: flex;
   flex-wrap: wrap;
   max-width: 1200px;
   // width: 1200px;
   // height: 1500px;
   background-color: lightgrey;
-  justify-content: space-between;
+  // justify-content: space-between;
+  align-self: center;
 }
 
 .statue-card {
   background-color: #42f4c2;
-  margin: 5px;
-  // width: 400px;
+  margin: 20px;
+  border-radius: 4px;
+  // flex-grow: 1;
+  // flex: 1;
+  // border: solid 1px black;
+  // width: 100%;
   // display: flex;
   // min-width: calc(100%/3 - 40px);
 }
 
-.statue-item {
+.statue-name {
   // width: calc(100%/3 - 40px);
   // height: 500px;
   margin: 20px;
+  background-color: darkgreen;
 }
 
-.img {
-  max-width: 300px;
-  max-height: 400px;
-  margin: 10px;
+.statue-img {
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  border-radius: 4px;
   transition: all 0.3s;
 }
 
