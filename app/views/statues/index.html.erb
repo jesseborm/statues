@@ -5,11 +5,14 @@
 <div class="statue-gallery">
   <% @statues.each do |statue| %>
   <div class="statue-card">
-    <div class="statue-image-link">
-      <%= link_to image_tag(statue.image_url, class: "statue-img"), statue, class: "link" %>
+    <div class="statue-image">
+      <%= link_to image_tag(statue.image_url, class: "statue-img"), statue, class: "statue-image-link" %>
     </div>
     <div class="statue-name">
       <%= statue.name %>
+    </div>
+    <div class="statue-button">
+      <%= link_to "View", statue, class: "btn" %>
     </div>
   </div>
   <% end  %>
