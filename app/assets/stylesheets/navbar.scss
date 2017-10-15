@@ -1,0 +1,24 @@
+
+
+header.header {
+  max-width: 940px;
+  width: 100%;
+  margin: 0 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #e2e2e2; */
+}
+.title {
+  display: flex;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav li {
+  list-style-type: none;
+}
