@@ -58,6 +58,7 @@ a {
   // height: 360px;
   overflow: hidden; //doesn't work ??? maybe to do with flex
   border-radius: 6px;
+  box-shadow: 3px 3px 5px #888888;
   transition: all 0.4s;
 }
 
@@ -70,5 +71,5 @@ a:hover img {
   background-color: #67a8f7;
   border-radius: 4px;
   color: #fff;
-  // border-shadow for hover...
+  box-shadow: 2px 2px 3px #888888;
 }
