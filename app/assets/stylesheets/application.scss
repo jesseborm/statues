@@ -17,11 +17,17 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
- // * {
- //   box-sizing: border-box;
- // }
- //
- // body {
- //   display: flex;
- //   flex-direction: column;
- // }
+ * {
+   box-sizing: border-box;
+ }
+
+ body {
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+ }
+
+ a {
+   text-decoration: none!important;
+ }
