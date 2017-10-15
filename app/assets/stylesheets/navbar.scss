@@ -1,24 +1,32 @@
 
 
-header.header {
+nav.navbarrr {
   max-width: 940px;
   width: 100%;
-  margin: 0 6%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  /* background-color: #e2e2e2; */
+  // align-items: center;
 }
-.title {
+.header-title {
   display: flex;
   align-items: center;
 }
 
-header nav {
-  display: flex;
-  justify-content: space-between;
+.header-title i {
+  margin-right: 12px;
+}
+.header-title h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
-header nav li {
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
   list-style-type: none;
+  margin-right: 12px;
 }
