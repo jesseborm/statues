@@ -1,13 +1,16 @@
 
 
 nav.navbarrr {
-  max-width: 940px;
+  // max-width: 940px; //not necessary when space-around instead of space-between
   width: 100%;
-  margin: 0 auto;
+  // margin: 0 auto; //for margin left right
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   // align-items: center;
+  background-color: #555;
+  color: white;
 }
+
 .header-title {
   display: flex;
   align-items: center;
@@ -16,6 +19,7 @@ nav.navbarrr {
 .header-title i {
   margin-right: 12px;
 }
+
 .header-title h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -30,3 +34,11 @@ nav ul li {
   list-style-type: none;
   margin-right: 12px;
 }
+
+
+// responsive
+// @media screen and (max-width: 600px) {
+//   header-title i {
+  //   display: none;
+  // }
+// }
