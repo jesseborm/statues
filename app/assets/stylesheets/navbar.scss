@@ -10,30 +10,120 @@ nav.navbarrr {
   background-color: #555;
   color: white;
 }
+//
+// .header-title {
+//   display: flex;
+//   align-items: center;
+// }
+//
+// .header-title i {
+//   margin-right: 12px;
+// }
 
-.header-title {
+#checkbox-nav, .toggle {
+  display: none;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  max-width: 700px;
+  height: 50px;
+  border-radius: 5px;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
+  list-style-type: none;
+  background-color: #efefef;
 }
 
-.header-title i {
-  margin-right: 12px;
+.menu li a {
+  text-decoration: none;
+  align-self: center;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px 15px;
+  transition: background .2s linear;
 }
 
-.header-title h1 {
+@media screen and (max-width: 600px) {
+  .menu li a {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .toggle {
+    clear: both;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    color: #595959;
+    background: #dbdbdb;
+    border-radius: 5px;
+    transition: all .1s linear;
+  }
+  .toggle:hover {
+    background: #cecece;
+  }
+  #checkbox-nav:checked + label .nav li {
+    opacity: 1;
+    visibility: visible;
+    transition: all .7s linear;
+  }
+
+  #checkbox-nav:checked + label .nav {
+    height: 200px;
+  }
+  .menu {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 0px;
+    transition: height .3s linear;
+  }
+  .menu li {
+    display: flex;
+    /* magic */
+    align-self: center;
+    width: 95%;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .menu li a {
+    width: 95%;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+  }
+}
+
+
+
+/*   previous styling   */
+
+
+header h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-nav ul {
-  display: flex;
-  align-items: center;
-}
-
-nav ul li {
-  list-style-type: none;
-  margin-right: 12px;
-}
+// nav ul {
+//   display: flex;
+//   align-items: center;
+// }
+//
+// nav ul li {
+//   list-style-type: none;
+//   margin-right: 12px;
+// }
 
 
 // responsive
